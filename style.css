@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  color: #fff;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #9139e4, #6dd5ed);
+}
+
+.navbar {
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  flex: 1;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 26px;
+  list-style-type: none;
+  transition: 0.4s;
+}
+ul li:hover {
+  transform: translateY(-2px);
+  font-size: 17px;
+  color: #045863;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #053b42;
+}
+ul li button {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 5px 15px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+ul li button:hover {
+  background-color: #fff;
+  color: #6dd5ed;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  margin: 90px 50px 0;
+}
+
+.main .content {
+  flex-basis: 60%;
+}
+.main .form {
+  flex-basis: 40%;
+}
+form {
+  background-color: #fff;
+  text-align: center;
+  width: 90%;
+  box-shadow: 3px 3px 10px #2f2f2f6e, -3px -3px 10px #2f2f2f6e;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+form:hover {
+  transform: translateY(-5px);
+}
+
+form h1 {
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 0;
+}
+form input {
+  width: 80%;
+  padding: 15px;
+  margin-top: 13px;
+  box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  color: #777;
+  outline: none;
+}
+form select {
+  width: 80%;
+  box-sizing: border-box;
+  color: #777;
+  padding: 15px;
+  margin-top: 13px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  /* color: #777; */
+  outline: none;
+}
+
+form select option {
+  color: #000;
+}
+
+form button {
+  width: 80%;
+  background-color: #4288d8;
+  padding: 13px;
+  border: none;
+  margin: 15px 0 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+form button:hover {
+  box-shadow: 0px 3px 5px #3983e4c2, 0px -3px 5px #3983e4c2;
+  background-color: #fff;
+  color: #4288d8;
+}
+.content h1 {
+  font-size: 90px;
+  font-weight: 280;
+  line-height: 80px;
+  margin-bottom: 40px;
+  /* margin-left: -670px; */
+  animation: move 1s 1;
+}
+@keyframes move {
+  0% {
+    margin-left: -670px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  animation-name: btn;
+  animation-duration: 1.5s;
+  overflow: hidden;
+  animation-iteration-count: 1;
+}
+@keyframes btn {
+  0% {
+    margin-bottom: 100px;
+  }
+  100% {
+    margin-bottom: 40px;
+  }
+}
+
+.content a {
+  background: #17d641;
+  padding: 10px 30px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.content a:hover {
+  box-shadow: 0px 3px 5px #045863, 0px -3px 5px #045863;
+  background-color: #fff;
+  color: #045863;
+}
